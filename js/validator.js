@@ -2,7 +2,7 @@
 
 
 
-document.getElementById("resForm").addEventListener("submit", (e) =>{
+function validate(){
 const fname=document.getElementById("fname").value.trim();
 const lname=document.getElementById("lname").value.trim();
 const email=document.getElementById("email").value.trim();
@@ -73,4 +73,3 @@ return false;
 }
 else return( true );
 }
-);
