@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cancel reservation</title>
+    <link rel="stylesheet" href="../../CSS/event reserv.css">
+    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
+    <script>
+        function openNav(){
+            document.getElementById("sideNav").style.width="18%";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor="rgba(0,0,0,0.7)";
+
+        }
+         function closeNav(){
+            document.getElementById("sideNav").style.width="0";
+            document.body.style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+
+    </script>
+</head>
+<body>
+<header class="hrow">
+    <div id="sideNav">
+        <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
+            <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li><hr/>
+            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
+            <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
+            <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
+            <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
+            <li><a href="../order/order2.html">Food Order </a></li><hr/>
+        </ul>
+    </div>
+    <div class="headerShadow">
+        <div class="header">
+            <div id="navigation">
+                <nav id="letters">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/about us2.html">About us</a>
+                    <a href="../review/contact.html">Contact us</a>
+                    <a href="../review/Feedback2.html">Feedback</a>
+                </nav>
+                <nav id="logos">
+                    <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/about us2.html">&#8505;</a>
+                    <a href="../review/contact.html">&#9743;</a>
+                    <a href="../review/Feedback2.html">&#x1f5e8;</a>
+                </nav>
+            </div>
+            <div id="logo">
+                <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <form id="srchform" role="search">
+            <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+            <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+        </form>
+    </div>
+</header>
+<main>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="row">
+                <div class="column-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <div class="container">
+                                <div class="formheader">
+                                    <center>
+                                        <h3 class="main-heading">Cancellation Form</h3>
+                                    </center><br>
+                                </div>
+                                <!--                                    <form action="registered.html" id="form2" class="login-form">-->
+                                <!--
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email address" class='input-field' placeholder="Enter email address" id="email" required>-->
+                                <form id="form2" class="login-form">
+                                    <div class="form-holder">
+                                        <div class="form-control">
+                                            <label for="Fname">First Name:</label>
+                                            <br><small>Error message</small>
+                                            <input type="text" name="name" class='input-field' placeholder="Enter first name" id="Fname">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="Lname">Last Name:</label>
+                                            <br><small>Error message</small> <input type="text" name="Lname" class='input-field' placeholder="Enter Last name" id="Lname">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="email">Email Address:</label>
+                                            <br><small>Error message</small>
+                                            <input type="email" name="email address" class='input-field' placeholder="a@gmail.com" id="email">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="date">Date:</label>
+
+                                            <input type="date" name="date" id="date" min="2022-01-22" max="2022-05-25" class='input-field'>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="time">Time:</label>
+
+                                            <input type="Time" name="time" class='input-field' id="time">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="occasion1">Occasions:</label><br>
+                                            <input type="checkbox" name="occasion" id="occasion1">Bridal Shower <br>
+                                            <input type="checkbox" name="occasion" id="occasion2">Wedding <br>
+                                            <input type="checkbox" name="occasion" id="occasion3">Baby Shower <br>
+                                            <input type="checkbox" name="occasion" id="occasion4">Birthday Party <br>
+                                            <input type="checkbox" name="occasion" id="occasion5">Meeting <br>
+                                            <input type="checkbox" name="occasion" id="occasion6">Charity Event <br>
+                                            <input type="checkbox" name="occasion" id="occasion7">Anniversary<br>
+                                            <input type="checkbox" name="occasion" id="occasion8">Holiday Parties<br>
+
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="quantity">How Many People?</label>
+                                            <select class='input-field' name="select" id="quantity">
+                                                <option value="1-10"class='input-field'>1-10 person</option>
+                                                <option value="11-20"class='input-field'>11-20 person</option>
+                                                <option value="21-30"class='input-field'>21-30 person</option>
+                                                <option value="30-50"class='input-field'>30-50 person</option>
+                                                <option value="50+" class='input-field'>50+ person</option>
+                                            </select>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+
+                                        </div>
+                                        <div class="form-control">
+                                            <div class="form-control">
+                                                <label for="quantity">How Many People?</label>
+
+                                                <select class='input-field' name="select" id="peopleQuantity">
+                                                    <option value="1-10"class='input-field'>1-10 person</option>
+                                                    <option value="11-20"class='input-field'>11-20 person</option>
+                                                    <option value="21-30"class='input-field'>21-30 person</option>
+                                                    <option value="30-50"class='input-field'>30-50 person</option>
+                                                    <option value="50+" class='input-field'>50+ person</option>
+                                                </select>
+                                                <i class="fas fa-check-circle"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+
+                                            </div>
+                                            <div>
+                                                <label for="phone1">Phone Number:</label>
+                                                <br><small>Error message</small><br>
+                                                <select name="phone code" id="phone1">
+                                                    <option value="+251" class='input-field'>+251</option>
+                                                    <option value="+12" class='input-field'>+120</option>
+                                                </select>
+                                                <input type="tel" id="phone2" name="phone" class='input-field' placeholder="967882862">
+                                                <i class="fas fa-check-circle"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+                                            </div>
+                                        </div>
+
+                                        <a href="#popup3"><input type='button' class='submit-button' value="Cancel reservation" onsubmit="return checkInputs()" ></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        const form = document.getElementById('form2');
+        const firstname = document.getElementById('Fname');
+        const Lastname = document.getElementById('Lname');
+        const email = document.getElementById('email');
+        const phonenumber = document.getElementById('phone');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            checkInputs();
+
+        });
+
+
+        function checkInputs() {
+            // trim to remove the whitespaces
+            const firstnameValue = firstname.value.trim();
+            const lastnameValue = Lastname.value.trim();
+            const emailValue = email.value.trim();
+            //const phoneValue = phonenumber.value.trim();
+
+            var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            if (firstnameValue === '' && firstnameValue != chars) {
+                setErrorFor(firstname, 'First name cannot be blank');
+            } else {
+                setSuccessFor(firstname);
+            }
+            if (lastnameValue === '') {
+                setErrorFor(Lastname, 'Last name cannot be blank');
+            } else {
+                setSuccessFor(Lastname);
+            }
+
+            if (emailValue === '') {
+                setErrorFor(email, 'Email cannot be blank');
+            } else if (!isEmail(emailValue)) {
+                setErrorFor(email, 'Not a valid email');
+            } else {
+                setSuccessFor(email);
+            }
+            /*
+                                var phoneno = /^\d{9}$/;
+                                if (phoneValue === '') {
+                                    setErrorFor(phonenumber, 'Phone number cannot be blank');
+                                } else if ((!phoneValue.match(phoneno))) {
+                                    setErrorFor(phonenumber, 'match the requested format');
+                                    return false;
+                                } else {
+                                    setSuccessFor(phonenumber);
+                                }*/
+        }
+
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = 'form-control error';
+            small.innerText = message;
+        }
+
+        function setSuccessFor(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-control success';
+        }
+
+        function isEmail(email) {
+            return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        }
+    </script>-->
+</main>
+
+<footer>
+    <div id="btm" class="feedback col-3">
+        <a href="#">Feedback</a>
+        <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
+    </div>
+    <div class="footer row">
+        <div class="col-9 followLinks">
+            <br><br>
+            <p>Follow us on </p>
+            <div id="btmlinks">
+                <a href="#"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                <a href="#"><img src="../../resources/images/tg2.png"></a>&nbsp;
+            </div>
+            <br><br>
+            <p  style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
+        </div>
+    </div>
+</footer>
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="../home/home.html" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>
+                You have cancelled your reservation successfully, Call us for more information or email Us at
+                <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a><br>THANK YOU FOR CHOOSING US.<br>
+            </p>
+            <button  onclick="window.location.href='reservationnew.html';">Table Reservation Form</button>
+            <button  onclick="window.location.href='../event/events2.html';">Event Reservation Form</button>
+        </div>
+    </div>
+</section>
+</body>
+</html>
