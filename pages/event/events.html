@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../../CSS (2)/CSS/events.css">
+    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
+    <script>
+        function openNav() {
+            document.getElementById("sideNav").style.width = "18%";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+
+        }
+
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+            document.body.style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="hrow">
+        <div id="sideNav">
+            <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li>
+                <hr/>
+                <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li>
+                <hr/>
+                <li><a href="../event/events terms and conditions.html">Event reservation </a></li>
+                <hr/>
+                <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li>
+                <hr/>
+                <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li>
+                <hr/>
+                <li><a href="../delivery/delivery.html">Delivery </a></li>
+                <hr/>
+                <li><a href="../order/order2.html">Food Order </a></li>
+                <hr/>
+            </ul>
+        </div>
+        <div class="headerShadow">
+            <div class="header">
+                <div id="navigation">
+                    <nav id="letters">
+                        <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                        <a href="../home/home.html">Home</a>
+                        <a href="../review/about us2.html">About us</a>
+                        <a href="../review/contact.html">Contact us</a>
+                        <a href="../review/Feedback2.html">Feedback</a>
+                    </nav>
+                    <nav id="logos">
+                        <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
+                        <a href="../home/home.html">&#8962;</a>
+                        <a href="../review/about us2.html">&#8505;</a>
+                        <a href="../review/contact.html">&#9743;</a>
+                        <a href="../review/Feedback2.html">&#x1f5e8;</a>
+                    </nav>
+                </div>
+                <div id="logo">
+                    <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <form id="srchform" role="search">
+                <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+                <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="middlebox">
+                <div class="content">
+                    <span> <h1>10</h1> </span>
+                    <h4>Days Remaining </h4>
+                    <p>
+                        <h5><span>Make a reservation for any occassions</span></h5>
+                        <h2>40% Holiday Discount</h2>
+                        <h4>Jan 18- Feb 02 </h4>
+                    </p>
+                </div>
+            </div><br><br>
+            <div class="box">
+                <div class="wrap">
+                    <h2 class="offer">Offer ends in</h2>
+                    <div class="timer">
+                        <div class="days">
+                            <span id="days_left"> 0</span>days</div>
+                        <div class="hours">
+                            <span id="hours_left"> 0 </span>hours</div>
+                        <div class="mins">
+                            <span id="mins_left"> 0 </span>mins</div>
+                        <div class="secs">
+                            <span id="secs_left"> 0 </span>secs</div>
+                    </div>
+                </div>
+                <div class="second">
+                    <a href="../event/reserve.html"><button class="reserve"><b>Reserve Now</b></button></a> <br>
+                </div>
+            </div>
+            </div><br><br>
+            <div class=" home-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../../resources/images/christmas.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../../resources/images/birthday.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../../resources/images/bridal shower.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../../resources/images/business.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../../resources/images/baby shower.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="../../resources/images/party3.jpeg" alt=""></div>
+                </div>
+            </div>
+
+            <section class="service" id="service">
+
+                <h1 class="heading"> our <span>services</span> </h1>
+
+                <div class="box-container">
+
+                    <div class="box2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Venue selection</h3>
+                        <p>You can choose the venue of your event.</p>
+                    </div>
+
+                    <div class="box2">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Invitation card</h3>
+                        <p>Invitation card is must for private events</p>
+                    </div>
+
+                    <div class="box2">
+                        <i class="fas fa-music"></i>
+                        <h3>Entertainment</h3>
+                        <p>We provide Mini concerts,Holiday parties and other public events.</p>
+                    </div>
+
+                    <div class="box2">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Food and drinks</h3>
+                        <p>We prepare special dishes of your choice for the event .</p>
+                    </div>
+
+                    <div class="box2">
+                        <i class="fas fa-photo-video"></i>
+                        <h3>Memories</h3>
+                        <p>Selfie zones for reserving memories of your special events.</p>
+                    </div>
+
+                    <div class="box2">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h3>Formal Events</h3>
+                        <p>Reservation of Business meetings and charity events.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="event-container">
+                <h3 class="year">2022</h3>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">18</div>
+                            <div class="month">Jan</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">BIRTHDAY PARTY</h3>
+
+                        <div class="event-description">
+                            <b> Private Event </b><br> Requirement:No age restriction,Invited Guests only
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 10:00 am
+                        </div>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">19</div>
+                            <div class="month">Jan</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">HOLIDAY PARTY</h3>
+
+                        <div class="event-description">
+                            <b> Anyone is welcome </b> <br> Requirement:(18+),ID
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 03:00 pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">22</div>
+                            <div class="month">Jan</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">BUSINESS MEETING</h3>
+
+                        <div class="event-description">
+                            <b> Private Event </b><br> Requirement:(18+),ID,Invited Guests only
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 09:45 am
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">9</div>
+                            <div class="month">Feb</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">CHARITY EVENT</h3>
+
+                        <div class="event-description">
+                            <b> Anyone is welcome </b> Requirement:No Requirement
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 08:30 am
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">4</div>
+                            <div class="month">Feb</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">Bridal Shower</h3>
+
+                        <div class="event-description">
+                            <b> Private Event </b><br> Requirement:Invited Guests only
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 13:30 pm
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-date">
+                            <div class="date">8</div>
+                            <div class="month">Mar</div>
+                        </div>
+                    </div>
+
+                    <div class="event-right">
+                        <h3 class="event-title">Meeting</h3>
+
+                        <div class="event-description">
+                            <b> Private Event </b><br> Requirement:Invited Guests only
+                        </div>
+
+                        <div class="event-timing">
+                            <img src="images/time.png" alt="" /> 09:30 am
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price" id="price">
+            <h2> Our Prices</h2>
+            <div class="col-1-of-2">
+                <div class="card">
+                    <div class="card_side card_side-front">
+                        <div class="card__detail">
+                            <h3 class="title">for birthdays</h3>
+                            <h3 class="amount">$200.99</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i>full services</li>
+                                <li> <i class="fas fa-check"></i> decorations </li>
+                                <li> <i class="fas fa-check"></i> music and photos </li>
+                                <li> <i class="fas fa-check"></i> food and drinks </li>
+                                <li> <i class="fas fa-check"></i> invitation card </li>
+                            </ul>
+                            <a href="reserve.html" class="btn">reserve now</a>
+                        </div>
+                    </div>
+                    <div class="card_side card_side-back">
+
+                        <div class="card__detail">
+                            <h3 class="title">for weddings</h3>
+                            <h3 class="amount">$480.99</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i>full services</li>
+                                <li> <i class="fas fa-check"></i> decorations </li>
+                                <li> <i class="fas fa-check"></i> music and photos </li>
+                                <li> <i class="fas fa-check"></i> food and drinks </li>
+                                <li> <i class="fas fa-check"></i> invitation card </li>
+                            </ul>
+                            <a href="reserve.html" class="btn">reserve now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="card">
+                    <div class="card_side card_side-front">
+                        <div class="card__detail">
+                            <h3 class="title">for concerts</h3>
+                            <h3 class="amount">$650.99</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i>full services</li>
+                                <li> <i class="fas fa-check"></i> decorations </li>
+                                <li> <i class="fas fa-check"></i> music and photos </li>
+                                <li> <i class="fas fa-check"></i> food and drinks </li>
+                                <li> <i class="fas fa-check"></i> invitation card </li>
+                            </ul>
+                            <a href="reserve.html" class="btn">reserve now</a>
+                        </div>
+                    </div>
+                    <div class="card_side card_side-back">
+                        <div class="card__detail">
+                            <h3 class="title">for others</h3>
+                            <h3 class="amount">$450-$870</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i>full services</li>
+                                <li> <i class="fas fa-check"></i> decorations </li>
+                                <li> <i class="fas fa-check"></i> music and photos </li>
+                                <li> <i class="fas fa-check"></i> food and drinks </li>
+                                <li> <i class="fas fa-check"></i> invitation card </li>
+                            </ul>
+                            <a href="reserve.html" class="btn">reserve now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="btm" class="feedback col-3">
+            <a href="#">Feedback</a>
+            <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
+        </div>
+        <div class="footer hrow">
+            <div class="col-9 followLinks">
+                <br><br>
+                <p>Follow us on </p>
+                <div id="btmlinks">
+                    <a href="#"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                    <a href="#"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                    <a href="#"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                    <a href="#"><img src="../../resources/images/tg2.png"></a>&nbsp;
+                </div>
+                <br><br>
+                <p style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../js/event.js"></script>
+</body>
+
+</html>
