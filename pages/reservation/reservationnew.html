@@ -9,8 +9,22 @@
     <meta name="keywords" content="delivery,mysteria">
     <link rel="stylesheet" href="../../CSS/style-1.css">
     <link rel="stylesheet" href="../../CSS/headerNfooter.css">
+    <link rel="stylesheet" href="../../CSS/popup.css">
     <title>Table Reservation </title>
-<script src="side nav.js"></script>
+    <script>
+        function openNav(){
+            document.getElementById("sideNav").style.width="18%";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor="rgba(0,0,0,0.7)";
+
+        }
+         function closeNav(){
+            document.getElementById("sideNav").style.width="0";
+            document.body.style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+
+    </script>
 </head>
 <body>
 <header class="row">
@@ -34,14 +48,14 @@
                     <a href="../home/home.html">Home</a>
                     <a href="../review/about us2.html">About us</a>
                     <a href="../review/contact.html">Contact us</a>
-                    <a href="../review/Feedback2.html">Feedback</a>
+                    <a href="#popup4">Feedback</a>
                 </nav>
                 <nav id="logos">
                     <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
                     <a href="../home/home.html">&#8962;</a>
                     <a href="../review/about us2.html">&#8505;</a>
                     <a href="../review/contact.html">&#9743;</a>
-                    <a href="../review/Feedback2.html">&#x1f5e8;</a>
+                    <a href="#popup4">&#x1f5e8;</a>
                 </nav>
             </div>
             <div id="logo">
@@ -124,10 +138,57 @@
         </div>
     </div>
 </section>
+      <section>
+            <div class="popup" id="popup4">
+                <div class="feedback-body">
+                    <div class="feedback-container">
+                        <div class="feedback-header">
+                            <h2 class="feedback-h2">
+                                Feedback Form
+                            </h2>
+                        </div>
+                        <form class="feedback-form" id="form">
+                            <div class="feedback-form-control">
+                                <lable class="feedback-lable">
+                                    <span class="feedback-span">User Name</span>
+                                </lable>
+                                <input type="text" class="feedback-input feedback-username" placeholder="Username"
+                                    id="username">
+                            </div>
+                            <div class="form-control">
+                                <lable class="feedback-lable">
+                                    <span class="feedback-span">Email</span>
+                                </lable><br>
+                                <input type="email" class="feedback-input feedback-email"
+                                    style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
+                                    id="email">
+                                <br><br>
+                                <div class="feedback-form-control">
+                                    <lable class="feedback-lable">
+                                        <span class="feedback-span">Feedback</span>
+                                    </lable><br>
+                                    <textarea class="feedback-input feedback-textarea" placeholder="Your Feedback Please"
+                                        id="feedback"></textarea>
+                                </div>
+                                <button class="feedback-button" id="submit" onclick="checkInput()">
+                                    Submit
+                                </button>
+                                <div class="popup_page-close">
+                                    <a href="#Feedback" class="popup_page-close"><img
+                                            src="../../resources/images/close_button.png" alt=""
+                                            class="popup_page-close-button"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 <section class="popup" id="popup3">
     <div class="popup_page">
         <div class="popup_page-close">
-            <a href="#Feedback" class="popup_page-close">&times;</a>
+            <a href="../home/home.html" class="popup_page-close">&times;</a>
         </div>
         <div class="popup_page-content">
             <p>You have reserved a table successfully,you will receive your table number via e-mail shortly.<br>THANK YOU FOR CHOOSING US.<br>

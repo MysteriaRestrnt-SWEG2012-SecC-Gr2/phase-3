@@ -4,28 +4,26 @@
     <meta name="charset" content="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <meta name="author" content="rediet">
+    <meta name="author" content="paulos">
     <meta name="description" content="webpage for mysteria restaurant's delivery">
     <meta name="keywords" content="delivery,mysteria">
     <link rel="stylesheet" href="../../CSS/style-1.css">
-    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
     <link rel="stylesheet" href="../../CSS/popup.css">
-    <title>Table Reservation cancellation form</title>
-<!--    <script src="validator.js"></script>-->
+    <title>Ordering page</title>
     <script>
         function openNav(){
             document.getElementById("sideNav").style.width="18%";
             //document.body.style.marginLeft="18%";
             document.body.style.backgroundColor="rgba(0,0,0,0.7)";
+
         }
          function closeNav(){
             document.getElementById("sideNav").style.width="0";
             document.body.style.marginLeft="0";
             document.body.style.backgroundColor="white";
         }
-</script>
 
-
+    </script>
 </head>
 <body>
 <header class="row">
@@ -33,8 +31,8 @@
         <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
             <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
-            <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li><hr/>
-            <li><a href="../event/events.html#popup1">Event reservation </a></li><hr/>
+            <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
+            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
             <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
             <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
             <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
@@ -75,51 +73,64 @@
 <section>
     <div class="row" id="sectionTopOrder">
         <div class="topTxt">
-            <h1><span class="restaurant">Mysteria restaurant</span> reservation</h1>
-            <p>...never keep you waiting</p>
+            <h1><span class="restaurant">Mysteria restaurant</span> ordering</h1>
+            <p>...enjoy food like never before</p>
         </div>
     </div>
     <div class="row">
         <div class="form col-6">
 
-            <form id="resForm" action="#popup3" method="post">
-                <hr><h1>
-                Reservation cancellation Form</h1> <hr>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder= "Full Name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+            <h2>Order form</h2>
+            <form  class="delivForm" action="last.html">
+                <p>Message: Number of order can not exceed 10 <b>Thank you</b></p><br>
+                <label for="Fname">First Name:</label>
+                <input type="text" name="name" placeholder="Enter first name" id="Fname"  required><br>
+                <label for="Lname">Last Name:</label>
+                <input type="text" name="Lname" placeholder="Enter Last name" id="Lname"  required><br>
+                <label for="food">Any additional food?</label><br>
+                <input type="radio" name="additional food" id="food">Yes <br>
+                <input type="radio" name="additional food" id="food2">No <br>
+                <label for="additional">If yes:</label>
+                <input type="text" name="food" id="additional" placeholder= "Enter food name" ><br>
+                <label for="ingredient1">If any allergic:</label><br>
+                <input type="checkbox" name="ingredients" id="ingredient1">Shrimp <br>
+                <input type="checkbox" name="ingredients" id="ingredient2">Garlic <br>
+                <input type="checkbox" name="ingredients" id="ingredient3">Peanuts <br>
+                <input type="checkbox" name="ingredients" id="ingredient4">Orange/lemon <br>
+                <input type="checkbox" name="ingredients" id="ingredient5">Milk<br>
+                <input type="checkbox" name="ingredients" id="ingredient6">Soy<br>
+                <input type="checkbox" name="ingredients" id="ingredient7">Egg<br>
+                <input type="checkbox" name="ingredients" id="ingredient8">fish<br>
+                <input type="checkbox" name="ingredients" id="ingredient9">Soy<br>
+                <input type="checkbox" name="ingredients" id="ingredient10">Coconut Oil<br>
+                <input type="checkbox" name="ingredients" id="ingredient11">None<br>
+                <label for="other">Other allergic type</label>
+                <input type="text"  name="other" id="other"  placeholder="if you are allergic to the main ingredient we suggest you change your order" size=65px><br>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date" required><br>
-                <label for="position">Position:</label>
-                <select name="position" id="position" >
-                    <option value="outdoor">Out door</option>
-                    <option value="indoor">Indoor</option>
-                    <option value="roof top">Roof top</option>
-                </select><br>
-                <label for="table_type">Table Type:</label>
-                <select name="table type" id="table_type">
-                    <option value="mysteria">Mysteria Table</option>
-                    <option value="dinner">Dinner Table</option>
-                    <option value="candle">Candle Table</option>
-                    <option value="family">Family Table</option>
-                </select><br>
-                <label for="people">How many people?</label>
-                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
-                <a href="#popup3"><input type="submit" value="cancel Reservation"/><hr><br></a>
-                You can also call:
-                <ul>
-                    <li> +251110000101</li>
-                    <li> +251967882862, for more information</li>
-                </ul>
+                <input type="date" name="date" id="date"  required><br>
+                <label for="time">Time:</label>
+                <input type="Time" name="time" id="time" required><br>
+                <label for="quantity">Quantity of orders:</label>
+                <input type="number" name="quantity" id="quantity" placeholder="number of orders" min="1" max="10" required><br>
+                <label for="phone">Phone Number:</label>
+                <select name="phone code" id="phone">
+                    <option value="+251">+251</option>
+                    <option value="+12">+120</option>
+                </select>
+                <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" required ><br>
+                <label for="address">Address:</label>
+                <textarea name="address" placeholder="enter your address" id="address" cols="20" rows="5" required></textarea><br>
+                <a><input type="submit" value="Order now"></a><hr>
             </form>
         </div>
         <div class="col-3 goto1">
             <div class="goto"><a href="#btm">&#10225; &nbsp; Bottom</a></div>
         </div>
     </div>
+
+
 </section>
-   <section>
+      <section>
             <div class="popup" id="popup4">
                 <div class="feedback-body">
                     <div class="feedback-container">
@@ -169,23 +180,22 @@
 <section class="popup" id="popup3">
     <div class="popup_page">
         <div class="popup_page-close">
-            <a href="../home/home.html" class="popup_page-close">&times;</a>
+            <a href="#Feedback" class="popup_page-close">&times;</a>
         </div>
         <div class="popup_page-content">
-            <p>
-                You have cancelled your reservation successfully, Call us for more information or email Us at
-                 <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a><br>THANK YOU FOR CHOOSING US.<br>
+            <p>You have ordered your food successfully,you will receive your order number via e-mail shortly.<br>THANK YOU FOR CHOOSING US.<br>
+                Email Us at <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a> For more information.<br>
             </p>
-            <button  onclick="window.location.href='reservationnew.html';">Reserve Table </button>
-            <button  onclick="window.location.href='../event/events terms and conditions.html';">Reserve Event</button>
+            <button  onclick="window.location.href='delivery.html';">Order again</button>
         </div>
     </div>
 </section>
-
+<!--<a href="#popup3">Feedback</a>-->
 <footer>
     <div id="btm" class="feedback col-3">
+        <a href="#">Feedback</a>
         <address>
-            call:<br>
+             call:<br>
             +251110000101<br>
             +251967882862
         </address>

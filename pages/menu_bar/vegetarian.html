@@ -8,6 +8,7 @@
     <meta name="keywords" content="Menu,mysteria">
     <title>Mysteria Vegetarian menu</title>
     <link rel="stylesheet" type="text/css" href="../../css/MenuStyle.css">
+    <link rel="stylesheet" href="../../CSS/popup.css">
 <script>
         function openNav(){
             document.getElementById("sideNav").style.width="18%";
@@ -27,8 +28,8 @@
         <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
             <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
-            <li><a href="../reservation/terms and conditions.html">Table reservation </a></li><hr/>
-            <li><a href="../event/events terms and conditions.html">Event reservation </a></li><hr/>
+            <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li><hr/>
+            <li><a href="../event/events.html#popup1">Event reservation </a></li><hr/>
             <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
             <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
             <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
@@ -40,17 +41,17 @@
             <div id="navigation">
                 <nav id="letters">
                     <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">Feedback</a>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/about us2.html">About us</a>
+                    <a href="../review/contact.html">Contact us</a>
+                    <a href="#popup4">Feedback</a>
                 </nav>
                 <nav id="logos">
                     <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
-                    <a href="#">&#8962;</a>
-                    <a href="#">&#8505;</a>
-                    <a href="#">&#9743;</a>
-                    <a href="#">&#x1f5e8;</a>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/about us2.html">&#8505;</a>
+                    <a href="../review/contact.html">&#9743;</a>
+                    <a href="#popup4">&#x1f5e8;</a>
                 </nav>
             </div>
             <div id="logo">
@@ -59,7 +60,7 @@
         </div>
     </div>
     <div id="search">
-        <form id="srchform" role="search">
+        <form id="srchform" role="search" onsubmit="search()">
             <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
             <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
         </form>
@@ -215,10 +216,57 @@
     </div>
 </div>
         </section>
+  <section>
+            <div class="popup" id="popup4">
+                <div class="feedback-body">
+                    <div class="feedback-container">
+                        <div class="feedback-header">
+                            <h2 class="feedback-h2">
+                                Feedback Form
+                            </h2>
+                        </div>
+                        <form class="feedback-form" id="form">
+                            <div class="feedback-form-control">
+                                <lable class="feedback-lable">
+                                    <span class="feedback-span">User Name</span>
+                                </lable>
+                                <input type="text" class="feedback-input feedback-username" placeholder="Username"
+                                    id="username">
+                            </div>
+                            <div class="form-control">
+                                <lable class="feedback-lable">
+                                    <span class="feedback-span">Email</span>
+                                </lable><br>
+                                <input type="email" class="feedback-input feedback-email"
+                                    style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
+                                    id="email">
+                                <br><br>
+                                <div class="feedback-form-control">
+                                    <lable class="feedback-lable">
+                                        <span class="feedback-span">Feedback</span>
+                                    </lable><br>
+                                    <textarea class="feedback-input feedback-textarea" placeholder="Your Feedback Please"
+                                        id="feedback"></textarea>
+                                </div>
+                                <button class="feedback-button" id="submit" onclick="checkInput()">
+                                    Submit
+                                </button>
+                                <div class="popup_page-close">
+                                    <a href="#Feedback" class="popup_page-close"><img
+                                            src="../../resources/images/close_button.png" alt=""
+                                            class="popup_page-close-button"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         </main>
 <footer>
     <div id="btm" class="feedback col-3">
-        <a href="#">Feedback</a>
+
         <address>
             call:<br>
             +251110000101<br>
@@ -230,10 +278,10 @@
             <br><br>
             <p>Follow us on </p>
             <div id="btmlinks">
-                <a href="#"><img src="../../resources/images/fb2.png"></a>&nbsp;
-                <a href="#"><img src="../../resources/images/insta2.png"></a>&nbsp;
-                <a href="#"><img src="../../resources/images/twitter2.png"></a>&nbsp;
-                <a href="#"><img src="../../resources/images/tg2.png"></a>&nbsp;
+                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                <a href="https://www.instagram.com"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                <a href="https://www.twitter.com"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                <a href="https://t.me/mysteriaRestaurant"><img src="../../resources/images/tg2.png"></a>&nbsp;
             </div>
             <br><br>
             <p style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
