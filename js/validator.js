@@ -1,6 +1,7 @@
     <script>
 function validator(){
-const name=document.getElementById("name").value.trim();
+const fname=document.getElementById("fname").value.trim();
+const lname=document.getElementById("lname").value.trim();
 const email=document.getElementById("email").value.trim();
 const phone=document.getElementById("phone").value.trim();
 var phoneS=phone.toString();
@@ -8,10 +9,16 @@ var atPosition=email.indexOf("@");
 var dotPosition=email.lastIndexOf(".");
 document.getElementById("resForm").addEventListener('submit', check() );
 check(){
-if(name==""||name==null)
+if(fname==""||fname==null)
 {
 alert("Sorry Name is required");
 document.resForm.name.focus() ;
+return false;
+}
+if(lname==""||lname==null)
+{
+alert("Sorry Name is required");
+document.resForm.lname.focus() ;
 return false;
 }
 if(email==""||email==null){
