@@ -15,34 +15,39 @@ alert("Sorry Name is required");
 document.resForm.name.focus() ;
 return false;
 }
-if(lname==""||lname==null)
+else if(lname==""||lname==null)
 {
 alert("Sorry Name is required");
 document.resForm.lname.focus() ;
 return false;
 }
-if(email==""||email==null){
+
+else if(email==""||email==null){
 alert("Sorry Email is required");
 document.resForm.email.focus() ;
 return false;
 }
-if(dotPosition-atPosition<3||email.length-dotPosition<3||atPosition<1){
+
+else if(dotPosition-atPosition<3||email.length-dotPosition<3||atPosition<1){
 alert("Invalid Email format");
 return false;}
-if(phoneS==""||phoneS==null){
+
+else if(phoneS==""||phoneS==null){
 alert("Sorry Phone number is required");
 return false;
 }
-if(isNaN(phone)){
+
+else if(isNaN(phone)){
 alert("Invalid phone number format");
 document.resForm.phone.focus() ;
 return false;
 }
-if(phoneS.length<9||phoneS.length>9)
+
+else if(phoneS.length<9||phoneS.length>9)
 {
 alert("Invalid phone number format");
 return false;
 }
-return( true );
+else return( true );
 }
 }
