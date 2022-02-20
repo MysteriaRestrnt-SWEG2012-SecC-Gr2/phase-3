@@ -1,4 +1,4 @@
-    <script>
+
 function validator(){
 const fname=document.getElementById("fname").value.trim();
 const lname=document.getElementById("lname").value.trim();
@@ -46,5 +46,3 @@ return false;
 return( true );
 }
 }
-
-    </script>
