@@ -82,10 +82,10 @@
             <div class="form col-6">
 
                 <h2>Delivery form</h2>
-                <form class="delivForm" action="#popup3">
+                <form class="delivForm" method="post" action="#popup3" onsubmit="return validateForm()">
                     <label for="fname">First Name:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
-
+                    <p id="error1"></p>
                     <label for="lname">Last Name:</label><br>
                     <input type="text" id="lname" name="lname" placeholder="Enter Last Name" ><br>
 
@@ -154,7 +154,7 @@
                                     <textarea class="feedback-input feedback-textarea" placeholder="Your Feedback Please"
                                         id="feedback"></textarea>
                                 </div>
-                                <button class="feedback-button" id="submit" onclick="return validate()">
+                                <button class="feedback-button" id="submit" onclick="validate()">
                                     Submit
                                 </button>
                                 <div class="popup_page-close">
