@@ -69,12 +69,15 @@
         <div class="form col-6">
 
             <h2>Order form</h2>
-            <form  class="delivForm" action="last.html">
+            <form  class="delivForm" action="#popup3" onsubmit="return orderValidateForm()">
                 <p>Message: Number of order can not exceed 10 <b>Thank you</b></p><br>
-                <label for="Fname">First Name:</label>
-                <input type="text" name="name" placeholder="Enter first name" id="Fname"  required><br>
-                <label for="Lname">Last Name:</label>
-                <input type="text" name="Lname" placeholder="Enter Last name" id="Lname"  required><br>
+                <label for="fname">First Name:</label>
+                <input type="text" name="name" placeholder="Enter first name" id="fname"  ><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Enter Last name" id="lname"  ><br>
+                <label for="order">Your order</label><br>
+                <textarea id="order" name="order" rows="3" cols="30"
+                          placeholder="Place Your Order Here"></textarea><br>
                 <label for="food">Any additional food?</label><br>
                 <input type="radio" name="additional food" id="food">Yes <br>
                 <input type="radio" name="additional food" id="food2">No <br>
@@ -95,19 +98,19 @@
                 <label for="other">Other allergic type</label>
                 <input type="text"  name="other" id="other"  placeholder="if you are allergic to the main ingredient we suggest you change your order" size=65px><br>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date"  required><br>
+                <input type="date" name="date" id="date"  ><br>
                 <label for="time">Time:</label>
-                <input type="Time" name="time" id="time" required><br>
+                <input type="Time" name="time" id="time" ><br>
                 <label for="quantity">Quantity of orders:</label>
-                <input type="number" name="quantity" id="quantity" placeholder="number of orders" min="1" max="10" required><br>
+                <input type="number" name="quantity" id="quantity" placeholder="number of orders" min="1" max="10" ><br>
                 <label for="phone">Phone Number:</label>
                 <select name="phone code" id="phone">
                     <option value="+251">+251</option>
                     <option value="+12">+120</option>
                 </select>
-                <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" required ><br>
+                <input type="tel" id="phone1" name="phone" placeholder="967882862"><br>
                 <label for="address">Address:</label>
-                <textarea name="address" placeholder="enter your address" id="address" cols="20" rows="5" required></textarea><br>
+                <textarea name="address" placeholder="enter your address" id="address" cols="20" rows="5" ></textarea><br>
                 <a><input type="submit" value="Order now"></a><hr>
             </form>
         </div>
@@ -168,13 +171,13 @@
 <section class="popup" id="popup3">
     <div class="popup_page">
         <div class="popup_page-close">
-            <a href="#Feedback" class="popup_page-close">&times;</a>
+            <a href="../home/home.html" class="popup_page-close">&times;</a>
         </div>
         <div class="popup_page-content">
             <p>You have ordered your food successfully,you will receive your order number via e-mail shortly.<br>THANK YOU FOR CHOOSING US.<br>
                 Email Us at <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a> For more information.<br>
             </p>
-            <button  onclick="window.location.href='delivery.html';">Order again</button>
+            <button  onclick="window.location.href='order2.html';">Order again</button>
         </div>
     </div>
 </section>
