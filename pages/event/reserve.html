@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../../CSS/popup.css">
     <script src="../../js/side nav.js"></script>
     <script src="../../js/validator.js"></script>
+<!--    <script src="../../js/form.js"></script>-->
 </head>
-<script src="../../js/js/form.js"></script>
+
 <body>
 <header class="hrow">
     <div id="sideNav">
@@ -74,21 +75,23 @@
                                         <!--
                                     <label for="email">Email Address:</label>
                                     <input type="email" name="email address" class='input-field' placeholder="Enter email address" id="email" required>-->
-                                   <form id="form2" class="login-form">
+                                   <form id="form2" class="login-form" action="#popup3" onsubmit="return eventValidateForm()">
                                        <div class="form-holder">
                                            <div class="form-control">
                                                <label for="Fname">First Name:</label>
-                                               <br><small>Error message</small>
+<!--                                               <br><small>Error message</small>-->
                                                <input type="text" name="name" class='input-field' placeholder="Enter first name" id="Fname">
-                                               <i class="fas fa-check-circle"></i>
-                                               <i class="fas fa-exclamation-circle"></i>
+<!--                                               <i class="fas fa-check-circle"></i>-->
+<!--                                               <i class="fas fa-exclamation-circle"></i>-->
 
                                            </div>
                                            <div class="form-control">
                                                <label for="Lname">Last Name:</label>
-                                               <br><small>Error message</small> <input type="text" name="Lname" class='input-field' placeholder="Enter Last name" id="Lname">
-                                               <i class="fas fa-check-circle"></i>
-                                               <i class="fas fa-exclamation-circle"></i>
+                                               <br>
+<!--                                               <small>Error message</small> -->
+                                               <input type="text" name="name" class='input-field' placeholder="Enter Last name" id="Lname">
+<!--                                               <i class="fas fa-check-circle"></i>-->
+<!--                                               <i class="fas fa-exclamation-circle"></i>-->
                                            </div>
                                            <div class="form-control">
                                                <label for="email">Email Address:</label>
@@ -117,7 +120,7 @@
                                                <input type="checkbox" name="occasion" id="occasion1">Bridal Shower <br>
                                                <input type="checkbox" name="occasion" id="occasion2">Wedding <br>
                                                <input type="checkbox" name="occasion" id="occasion3">Baby Shower <br>
-                                               <input type="checkbox" name="occasion" id="occasion4">Birthday Party <br>
+                                               <input type="checkbox" name="occasion" id="occasion4" checked="checked">Birthday Party <br>
                                                <input type="checkbox" name="occasion" id="occasion5">Meeting <br>
                                                <input type="checkbox" name="occasion" id="occasion6">Charity Event <br>
                                                <input type="checkbox" name="occasion" id="occasion7">Anniversary<br>
@@ -127,23 +130,10 @@
                                                <i class="fas fa-exclamation-circle"></i>
                                            </div>
                                            <div class="form-control">
-                                               <label for="quantity">How Many People?</label>
-                                               <select class='input-field' name="select" id="quantity">
-                                                   <option value="1-10"class='input-field'>1-10 person</option>
-                                                   <option value="11-20"class='input-field'>11-20 person</option>
-                                                   <option value="21-30"class='input-field'>21-30 person</option>
-                                                   <option value="30-50"class='input-field'>30-50 person</option>
-                                                   <option value="50+" class='input-field'>50+ person</option>
-                                               </select>
-                                               <i class="fas fa-check-circle"></i>
-                                               <i class="fas fa-exclamation-circle"></i>
-
-                                           </div>
-                                           <div class="form-control">
                                                <div class="form-control">
                                                    <label for="quantity">How Many People?</label>
 
-                                                   <select class='input-field' name="select" id="peopleQuantity">
+                                                   <select class='input-field' name="select" id="quantity">
                                                        <option value="1-10"class='input-field'>1-10 person</option>
                                                        <option value="11-20"class='input-field'>11-20 person</option>
                                                        <option value="21-30"class='input-field'>21-30 person</option>
@@ -166,9 +156,8 @@
                                                    <i class="fas fa-exclamation-circle"></i>
                                                </div>
                                            </div>
-                                           <input type='submit' class='submit-button' value="Reserve now" onsubmit="return checkInputs()">
-                                           <a href="#popup1"><input type="button" class='submit-button' value="Terms and Conditions"/></a>
-                                       </div>
+                                           <input type='submit' class='submit-button' value="Reserve now">
+                                        </div>
                                 </form>
                                 </div>
                             </div>
@@ -246,53 +235,52 @@
                 }
             </script>-->
     </main>
-      <section>
-            <div class="popup" id="popup4">
-                <div class="feedback-body">
-                    <div class="feedback-container">
-                        <div class="feedback-header">
-                            <h2 class="feedback-h2">
-                                Feedback Form
-                            </h2>
-                        </div>
-                        <form class="feedback-form" id="form">
-                            <div class="feedback-form-control">
-                                <lable class="feedback-lable">
-                                    <span class="feedback-span">User Name</span>
-                                </lable>
-                                <input type="text" class="feedback-input feedback-username" placeholder="Username"
-                                    id="username">
-                            </div>
-                            <div class="form-control">
-                                <lable class="feedback-lable">
-                                    <span class="feedback-span">Email</span>
-                                </lable><br>
-                                <input type="email" class="feedback-input feedback-email"
-                                    style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
-                                    id="email">
-                                <br><br>
-                                <div class="feedback-form-control">
-                                    <lable class="feedback-lable">
-                                        <span class="feedback-span">Feedback</span>
-                                    </lable><br>
-                                    <textarea class="feedback-input feedback-textarea" placeholder="Your Feedback Please"
-                                        id="feedback"></textarea>
-                                </div>
-                                <button class="feedback-button" id="submit" onclick="checkInput()">
-                                    Submit
-                                </button>
-                                <div class="popup_page-close">
-                                    <a href="#Feedback" class="popup_page-close"><img
-                                            src="../../resources/images/close_button.png" alt=""
-                                            class="popup_page-close-button"></a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+<section>
+    <div class="popup" id="popup4">
+        <div class="feedback-body">
+            <div class="feedback-container">
+                <div class="feedback-header">
+                    <h2 class="feedback-h2">
+                        Feedback Form
+                    </h2>
                 </div>
+                <form class="feedback-form" id="form">
+                    <div class="feedback-form-control">
+                        <lable class="feedback-lable">
+                            <span class="feedback-span">User Name</span>
+                        </lable>
+                        <input type="text" class="feedback-input feedback-username" placeholder="Username"
+                               id="username">
+                    </div>
+                    <div class="form-control">
+                        <lable class="feedback-lable">
+                            <span class="feedback-span">Email</span>
+                        </lable><br>
+                        <input type="email" class="feedback-input feedback-email"
+                               style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
+                               id="email2">
+                        <br><br>
+                        <div class="feedback-form-control">
+                            <lable class="feedback-lable">
+                                <span class="feedback-span">Feedback</span>
+                            </lable><br>
+                            <textarea class="feedback-input feedback-textarea" placeholder="Your Feedback Please"
+                                      id="feedback"></textarea>
+                        </div>
+                        <button class="feedback-button" id="submit" onclick="checkInput()">
+                            Submit
+                        </button>
+                        <div class="popup_page-close">
+                            <a href="#Feedback" class="popup_page-close"><img
+                                    src="../../resources/images/close_button.png" alt=""
+                                    class="popup_page-close-button"></a>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </section>
-
+        </div>
+    </div>
+</section>
 <section class="popup" id="popup1">
     <div class="popup_page1">
         <div class="popup_page-close">
@@ -334,12 +322,25 @@
             <p>A comfortable place Many Guests ask us about a dress code: I can only ask to respect others Guests, especially for dinner, with a
                 correct one (no slippers, men's shorts...), and thank you for your delicate attention!</p>
 
-            <form  action="reservationnew.html">
+            <form  action="reserve.html">
                 <input type="checkbox" id="terms" value="conditions" required/><label for="terms">I have read and accepted terms and conditions. &nbsp;</label>
                 <input id="termsbtn" type="submit" value="Continue">
             </form>
             <br>
 
+        </div>
+    </div>
+</section>
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="../home/home.html" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>You have reserved a table successfully,you will receive your table number via e-mail shortly.<br>THANK YOU FOR CHOOSING US.<br>
+                Email Us at <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a> For more information.<br>
+            </p>
+            <button onclick="window.location.href='reserve.html';">Reserve again</button>
         </div>
     </div>
 </section>
