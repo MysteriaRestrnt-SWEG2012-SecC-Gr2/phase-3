@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="charset" content="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="paulos">
+    <meta name="description" content="webpage for mysteria restaurant's delivery">
+    <meta name="keywords" content="delivery,mysteria">
+    <link rel="stylesheet" href="../../CSS/style-1.css">
+    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
+    <title>Table Reservation </title>
+<script src="side nav.js"></script>
+</head>
+<body>
+<header class="row">
+    <div id="sideNav">
+        <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
+            <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li><hr/>
+            <li><a href="../event/events.html#popup1">Event reservation </a></li><hr/>
+            <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
+            <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
+            <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
+            <li><a href="../order/order2.html">Food Order </a></li><hr/>
+        </ul>
+    </div>
+    <div class="headerShadow">
+        <div class="header">
+            <div id="navigation">
+                <nav id="letters">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/about us2.html">About us</a>
+                    <a href="../review/contact.html">Contact us</a>
+                    <a href="../review/Feedback2.html">Feedback</a>
+                </nav>
+                <nav id="logos">
+                    <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/about us2.html">&#8505;</a>
+                    <a href="../review/contact.html">&#9743;</a>
+                    <a href="../review/Feedback2.html">&#x1f5e8;</a>
+                </nav>
+            </div>
+            <div id="logo">
+                <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <form id="srchform" role="search" onsubmit="search()">
+            <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+            <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+        </form>
+    </div>
+</header>
+
+<section>
+    <div class="row" id="sectionTopOrder">
+        <div class="topTxt">
+            <h1><span class="restaurant">Mysteria restaurant</span> reservation</h1>
+            <p>...never keep you waiting</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form col-6">
+
+            <h2>Table Reservation Form</h2>
+            <form class="delivForm" action="#popup3" >
+                <label for="ReservName">Name:</label>
+                <input type="text" name="name" id="ReservName"  placeholder= "Full Name"  required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" required><br>
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" required><br>
+                <label for="position">Position:</label>
+                <select name="position" id="position">
+                    <option value="outdoor">Out door</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="roof top">Roof top</option>
+                </select><br>
+                <label for="table_type">Table Type:</label>
+                <select name="table type" id="table_type">
+                    <option value="mysteria">Mysteria Table</option>
+                    <option value="dinner">Dinner Table</option>
+                    <option value="candle">Candle Table</option>
+                    <option value="family">Family Table</option>
+                </select><br>
+                <label for="parking">Car parking:</label><br>
+                <input type="radio" id="parking" value="yes" name="car parking">Yes<br>
+                <input type="radio" id="parking2" value="no" name="car parking">No  <br>
+                <label for="people">How many people?</label>
+                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
+                <label for="phone">phone:</label><br>
+                <select name="phone code" id="phone">
+                    <option value="+251">+251</option>
+                    <option value="+12">+120</option>
+                </select>
+                <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" required><br>
+                <label for="card">Payment Type:</label>
+                <select name="card type" id="card">
+                    <option value="visa card">visa card</option>
+                    <option value="master card">master card</option>
+                    <option value="credit card">credit card</option>
+                    <option value="paypall">PayPall</option>
+                </select><br>
+                <label for="acc_number">account:</label>
+                <input type="text" name="account number" id="acc_number" pattern="[0-9]{15}" placeholder="Enter account number" required><br>
+<!--                <a href="#popup1"><input type="button" value="Terms and Conditions"/></a>-->
+                <input type="submit" value="Make Reservation"/><hr><br>
+                You can also call:
+                <ul>
+                    <li> +251110000101</li>
+                    <li> +251967882862, to make reservation</li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-3 goto1">
+            <div class="goto"><a href="#btm">&#10225; &nbsp; Bottom</a></div>
+        </div>
+    </div>
+</section>
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="#Feedback" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>You have reserved a table successfully,you will receive your table number via e-mail shortly.<br>THANK YOU FOR CHOOSING US.<br>
+                Email Us at <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a> For more information.<br>
+            </p>
+            <button onclick="window.location.href='reservationnew.html';">Reserve again</button>
+        </div>
+    </div>
+</section>
+
+<section class="popup" id="popup1">
+    <div class="popup_page1">
+        <div class="popup_page-close">
+            <a href="../home/home.html" class="popup_page-close">&times;</a>
+        </div>
+
+        <div class="popup_page-content popup_res">
+
+
+            <h1>Table Reservation Terms and Conditions</h1><br><br>
+            <strong>PLEASE READ CAREFULLY!</strong><br><br>
+
+            <b><u>CONFIRMATION</u></b><br>
+            Any	booking	may	be required	to	leave	credit	or	debit	card	details	to	secure	the	booking. The	card
+            will	be	verified	for	the	amount	of	£20	per	person,	but	nothing	will be	charged	unless	the	late
+            cancellation	policy	is	breached.<br>
+            <b><u>CANCELLATION</u></b><br>
+            <ul>
+                <li>Bookings of up to 6 persons	may	be cancelled up	to 4pm on the day. For bottomless brunch on Saturday, until 6pm
+                    the day before the booking.</li>
+                <li>Bookings of 7-10 persons and more may be cancelled up to 7 days	before	the	event.</li>
+                <li>Bookings of 11 + persons may be cancelled up to 2 weeks before	the	event.</li>
+                If	the	cancellation	policy	is	breached,	we	will	charge	the	card provided	to	secure	the	booking £20	per
+                every	person	on	the	booking.
+            </ul>
+            <p>
+                Any	changes	in	numbers	of	guests of up to	25%	of	the	original group size (in the	guest’s	favour) may
+                be	made	up	until	4pm	on	the	day	of	the	evening	booking	and	for	lunch,	up	to	11am	on	the	morning
+                of the booking. Failure to notify us of a reduction in numbers	by these cut off times will result in a £20 charge for
+                each no-show. If your	numbers	change	by	more than 25% we need notification in line with our cancellation policy
+                above, otherwise we	will need to charge	£20	for	each non-arrival</p>
+            <b><u>CHILDREN</u></b>
+            <p>We love children...but we also love a quiet dining room. If you do decide to bring your children, we ask that you
+                make sure they respect the other Guests. We are happy to prepare a simple child's meal.</p>
+            <b><u>ARRIVAL AND DEPARTURE</u></b>
+            <p>Please make sure	that your group	arrives	on	time. We may have bookings after yours, and require it back,
+                please ask on	arrival	if	you	would like an extension	and	we will do our best.</p>
+            <b><u>DRESS CODE</u></b>
+            <p>A comfortable place Many Guests ask us about a dress code: I can only ask to respect others Guests, especially for dinner, with a
+                correct one (no slippers, men's shorts...), and thank you for your delicate attention!</p>
+
+            <form  action="reservationnew.html">
+                <input type="checkbox" id="terms" value="conditions" required/><label for="terms">I have read and accepted terms and conditions. &nbsp;</label>
+                <input id="termsbtn" type="submit" value="Continue">
+            </form>
+            <br>
+
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div id="btm" class="feedback col-3">
+        <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
+    </div>
+    <div class="footer row">
+        <div class="col-9 followLinks">
+            <br><br>
+            <p>Follow us on </p>
+            <div id="btmlinks">
+                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                <a href="https://www.instagram.com"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                <a href="https://www.twitter.com"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                <a href="https://t.me/mysteriaRestaurant"><img src="../../resources/images/tg2.png"></a>&nbsp;
+            </div>
+            <br><br>
+            <p  style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
