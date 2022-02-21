@@ -75,7 +75,7 @@
             <div class="form col-6">
 
                 <h2>Delivery form</h2>
-                <form class="delivForm" method="post" action="#popup3" onsubmit="return validateForm()">
+                <form class="delivForm" method="post" action="#popup3" onsubmit="return deliValidateForm()">
                     <label for="fname">First Name:</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
                     <p id="error1"></p>
@@ -101,7 +101,7 @@
                         <option value="+251">+251</option>
                         <option value="+12">+120</option>
                     </select>
-                    <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" ><br>
+                    <input type="tel" id="phone1" name="phone" placeholder="967882862"><br>
 
                     <label for="address">Address:</label><br>
                     <textarea name="address" placeholder="enter your address" id="address" cols="20" rows="5"
