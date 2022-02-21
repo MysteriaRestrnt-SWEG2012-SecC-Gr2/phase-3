@@ -70,15 +70,15 @@
     <div class="row">
         <div class="form col-6">
 
-            <form id="resForm" action="#popup3" method="post">
+            <form id="resForm" action="#popup3" method="post" onsubmit="return cancelValidateForm()">
                 <hr><h1>
                 Reservation cancellation Form</h1> <hr>
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder= "Full Name" required><br>
+                <input type="text" name="name" id="name" placeholder= "Full Name" ><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+                <input type="text" name="email" id="email" placeholder= "Enter Email" ><br>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date" required><br>
+                <input type="date" name="date" id="date" ><br>
                 <label for="position">Position:</label>
                 <select name="position" id="position" >
                     <option value="outdoor">Out door</option>
@@ -93,8 +93,8 @@
                     <option value="family">Family Table</option>
                 </select><br>
                 <label for="people">How many people?</label>
-                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
-                <a href="#popup3"><input type="submit" value="cancel Reservation"/><hr><br></a>
+                <input type="number" name="people" id="people" placeholder= "Number of people" ><br>
+                <input type="submit" value="cancel Reservation"><hr><br>
                 You can also call:
                 <ul>
                     <li> +251110000101</li>
@@ -130,7 +130,7 @@
                                 </lable><br>
                                 <input type="email" class="feedback-input feedback-email"
                                     style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
-                                    id="email">
+                                    id="email2">
                                 <br><br>
                                 <div class="feedback-form-control">
                                     <lable class="feedback-lable">
