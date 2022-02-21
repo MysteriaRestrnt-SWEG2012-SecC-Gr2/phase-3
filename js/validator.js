@@ -244,4 +244,63 @@ return false;
 
 else return( true );
 }
+function eventValidateForm(){
+var name = document.getElementById("Fname").value;
+var lname=document.getElementById("Lname").value;
+var email=document.getElementById("email").value;
+var date=document.getElementById("date").value;
+var time=document.getElementById("time").value;
+var phone=document.getElementById("phone2").value;
+var phoneS=phone.toString();
+var atPosition=email.indexOf("@");
+var dotPosition=email.lastIndexOf(".");
+
+if(name==""||name==null)
+{
+window.alert("Sorry name is required");
+return false;
+}
+else if(lname==""||lname==null)
+{
+alert("Sorry Last name is required");
+
+return false;
+}
+if(email==""||email==null){
+alert("Sorry Email is required");
+return false;
+}
+if(dotPosition-atPosition<3||email.length-dotPosition<3||atPosition<1){
+alert("Invalid Email format");
+return false;}
+else if(date==""||date==null){
+alert("Sorry date is required");
+return false;
+}
+else if(time==""||time==null){
+alert("Sorry time is required");
+return false;
+}
+
+else if(phone==""||phone==null){
+window.alert("Sorry Phone number is required");
+
+return false;
+}
+
+else if(isNaN(phone)){
+alert("Invalid phone number format");
+
+return false;
+}
+
+else if(phoneS.length!=9)
+{
+alert("Invalid phone number format");
+
+return false;
+}
+
+else return( true );
+}
 
