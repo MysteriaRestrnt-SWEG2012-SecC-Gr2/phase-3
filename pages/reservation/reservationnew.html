@@ -70,15 +70,15 @@
         <div class="form col-6">
 
             <h2>Table Reservation Form</h2>
-            <form class="delivForm" action="#popup3" >
+            <form class="delivForm" action="#popup3" onsubmit="return reservationValidateForm()">
                 <label for="ReservName">Name:</label>
-                <input type="text" name="name" id="ReservName"  placeholder= "Full Name"  required><br>
+                <input type="text" name="name" id="ReservName"  placeholder= "Full Name"  ><br>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+                <input type="text" name="email" id="email" placeholder= "Enter Email" ><br>
                 <label for="date">Date:</label>
-                <input type="date" name="date" id="date" required><br>
+                <input type="date" name="date" id="date" ><br>
                 <label for="time">Time:</label>
-                <input type="time" name="time" id="time" required><br>
+                <input type="time" name="time" id="time" ><br>
                 <label for="position">Position:</label>
                 <select name="position" id="position">
                     <option value="outdoor">Out door</option>
@@ -94,15 +94,15 @@
                 </select><br>
                 <label for="parking">Car parking:</label><br>
                 <input type="radio" id="parking" value="yes" name="car parking">Yes<br>
-                <input type="radio" id="parking2" value="no" name="car parking">No  <br>
+                <input type="radio" id="parking2" value="no" name="car parking">No<br>
                 <label for="people">How many people?</label>
-                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
+                <input type="number" name="people" id="people" placeholder= "Number of people" ><br>
                 <label for="phone">phone:</label><br>
                 <select name="phone code" id="phone">
                     <option value="+251">+251</option>
                     <option value="+12">+120</option>
                 </select>
-                <input type="tel" id="phone1" name="phone" placeholder="967882862" pattern="[0-9]{9}" required><br>
+                <input type="tel" id="phone1" name="phone" placeholder="967882862"><br>
                 <label for="card">Payment Type:</label>
                 <select name="card type" id="card">
                     <option value="visa card">visa card</option>
@@ -111,9 +111,8 @@
                     <option value="paypall">PayPall</option>
                 </select><br>
                 <label for="acc_number">account:</label>
-                <input type="text" name="account number" id="acc_number" pattern="[0-9]{15}" placeholder="Enter account number" required><br>
-<!--                <a href="#popup1"><input type="button" value="Terms and Conditions"/></a>-->
-                <input type="submit" value="Make Reservation"/><hr><br>
+                <input type="text" name="account number" id="acc_number"  placeholder="Enter account number" ><br>
+                <input type="submit" value="Make Reservation"><hr><br>
                 You can also call:
                 <ul>
                     <li> +251110000101</li>
@@ -149,7 +148,7 @@
                                 </lable><br>
                                 <input type="email" class="feedback-input feedback-email"
                                     style="border-color: black; padding: 20px; width: 100%;" placeholder="email address"
-                                    id="email">
+                                    id="email2">
                                 <br><br>
                                 <div class="feedback-form-control">
                                     <lable class="feedback-lable">
@@ -200,7 +199,7 @@
             <strong>PLEASE READ CAREFULLY!</strong><br><br>
 
             <b><u>CONFIRMATION</u></b><br>
-            Any	booking	may	be required	to	leave	credit	or	debit	card	details	to	secure	the	booking. The	card
+            Any	booking	may	be 	to	leave	credit	or	debit	card	details	to	secure	the	booking. The	card
             will	be	verified	for	the	amount	of	£20	per	person,	but	nothing	will be	charged	unless	the	late
             cancellation	policy	is	breached.<br>
             <b><u>CANCELLATION</u></b><br>
@@ -229,7 +228,7 @@
                 correct one (no slippers, men's shorts...), and thank you for your delicate attention!</p>
 
             <form  action="reservationnew.html">
-                <input type="checkbox" id="terms" value="conditions" required/><label for="terms">I have read and accepted terms and conditions. &nbsp;</label>
+                <input type="checkbox" id="terms" value="conditions" /><label for="terms">I have read and accepted terms and conditions. &nbsp;</label>
                 <input id="termsbtn" type="submit" value="Continue">
             </form>
             <br>
