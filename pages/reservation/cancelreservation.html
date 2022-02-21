@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="charset" content="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="author" content="rediet">
+    <meta name="description" content="webpage for mysteria restaurant's delivery">
+    <meta name="keywords" content="delivery,mysteria">
+    <link rel="stylesheet" href="../../CSS/style-1.css">
+    <link rel="stylesheet" href="../../CSS/headerNfooter.css">
+    <title>Table Reservation cancellation form</title>
+<!--    <script src="validator.js"></script>-->
+    <script>
+        function openNav(){
+            document.getElementById("sideNav").style.width="18%";
+            //document.body.style.marginLeft="18%";
+            document.body.style.backgroundColor="rgba(0,0,0,0.7)";
+        }
+         function closeNav(){
+            document.getElementById("sideNav").style.width="0";
+            document.body.style.marginLeft="0";
+            document.body.style.backgroundColor="white";
+        }
+</script>
+
+
+</head>
+<body>
+<header class="row">
+    <div id="sideNav">
+        <a href="javascript:void(0) " class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="../menu_bar/FoodMenu.html">Food Menu </a></li><hr/>
+            <li><a href="../reservation/reservationnew.html#popup1">Table reservation </a></li><hr/>
+            <li><a href="../event/events.html#popup1">Event reservation </a></li><hr/>
+            <li><a href="../reservation/cancelreservation.html">Cancel Table reservation </a></li><hr/>
+            <li><a href="../event/cancel event reservation.html">Cancel Event reservation </a></li><hr/>
+            <li><a href="../delivery/delivery.html">Delivery </a></li><hr/>
+            <li><a href="../order/order2.html">Food Order </a></li><hr/>
+        </ul>
+    </div>
+    <div class="headerShadow">
+        <div class="header">
+            <div id="navigation">
+                <nav id="letters">
+                    <span onclick="openNav()" style="font-size:30px; color: seashell; cursor:pointer;">&#9776;</span>
+                    <a href="../home/home.html">Home</a>
+                    <a href="../review/about us2.html">About us</a>
+                    <a href="../review/contact.html">Contact us</a>
+                    <a href="../review/Feedback2.html">Feedback</a>
+                </nav>
+                <nav id="logos">
+                    <div id="span"><span onclick="openNav()" style="font-size:140%; color: seashell; cursor:pointer;">&#9776;</span></div>
+                    <a href="../home/home.html">&#8962;</a>
+                    <a href="../review/about us2.html">&#8505;</a>
+                    <a href="../review/contact.html">&#9743;</a>
+                    <a href="../review/Feedback2.html">&#x1f5e8;</a>
+                </nav>
+            </div>
+            <div id="logo">
+                <a href="../home/home.html"><img id="Mystlogo" src="../../resources/images/MLOGO.png" alt="Mysteria Logo"></a>
+            </div>
+        </div>
+    </div>
+    <div id="search">
+        <form id="srchform" role="search" onsubmit="search()">
+            <input type="search" id="query" name="q" placeholder="Search" aria-label="search through site content">
+            <button id="srchbtn" type="submit"><img id="srchimg" src="../../resources/images/searchwhite.png"></button>
+        </form>
+    </div>
+</header>
+
+<section>
+    <div class="row" id="sectionTopOrder">
+        <div class="topTxt">
+            <h1><span class="restaurant">Mysteria restaurant</span> reservation</h1>
+            <p>...never keep you waiting</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form col-6">
+
+            <form id="resForm" action="#popup3" method="post">
+                <hr><h1>
+                Reservation cancellation Form</h1> <hr>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder= "Full Name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder= "Enter Email" required><br>
+                <label for="date">Date:</label>
+                <input type="date" name="date" id="date" required><br>
+                <label for="position">Position:</label>
+                <select name="position" id="position" >
+                    <option value="outdoor">Out door</option>
+                    <option value="indoor">Indoor</option>
+                    <option value="roof top">Roof top</option>
+                </select><br>
+                <label for="table_type">Table Type:</label>
+                <select name="table type" id="table_type">
+                    <option value="mysteria">Mysteria Table</option>
+                    <option value="dinner">Dinner Table</option>
+                    <option value="candle">Candle Table</option>
+                    <option value="family">Family Table</option>
+                </select><br>
+                <label for="people">How many people?</label>
+                <input type="number" name="people" id="people" placeholder= "Number of people" required><br>
+                <a href="#popup3"><input type="submit" value="cancel Reservation"/><hr><br></a>
+                You can also call:
+                <ul>
+                    <li> +251110000101</li>
+                    <li> +251967882862, for more information</li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-3 goto1">
+            <div class="goto"><a href="#btm">&#10225; &nbsp; Bottom</a></div>
+        </div>
+    </div>
+
+
+</section>
+<section class="popup" id="popup3">
+    <div class="popup_page">
+        <div class="popup_page-close">
+            <a href="#Feedback" class="popup_page-close">&times;</a>
+        </div>
+        <div class="popup_page-content">
+            <p>
+                You have cancelled your reservation successfully, Call us for more information or email Us at
+                 <a href="www.mysteriammtopr@gmail.com">mysteriammtopr@gmail.com</a><br>THANK YOU FOR CHOOSING US.<br>
+            </p>
+            <button  onclick="window.location.href='reservationnew.html';">Reserve Table </button>
+            <button  onclick="window.location.href='../event/events terms and conditions.html';">Reserve Event</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="btm" class="feedback col-3">
+        <address>
+            call:<br>
+            +251110000101<br>
+            +251967882862
+        </address>
+    </div>
+    <div class="footer row">
+        <div class="col-9 followLinks">
+            <br><br>
+            <p>Follow us on </p>
+            <div id="btmlinks">
+                <a href="https://www.facebook.com/103469795537169/posts/103501355534013"><img src="../../resources/images/fb2.png"></a>&nbsp;
+                <a href="https://www.instagram.com"><img src="../../resources/images/insta2.png"></a>&nbsp;
+                <a href="https://www.twitter.com"><img src="../../resources/images/twitter2.png"></a>&nbsp;
+                <a href="https://t.me/mysteriaRestaurant"><img src="../../resources/images/tg2.png"></a>&nbsp;
+            </div>
+            <br><br>
+            <p  style="font-size:16px; text-align:left; ">Copyright &copy; Mysteria 2021/22, all rights reserved </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
